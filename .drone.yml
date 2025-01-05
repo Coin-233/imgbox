@@ -8,7 +8,7 @@ volumes:
       path: /volumes/drone/volumes/blog/node_modules
   - name: deploy_path
     host: 
-      path: /opt/1panel/apps/openresty/openresty/www/sites/imgbox.irchat.cn
+      path: /opt/1panel/apps/openresty/openresty/www/sites/imgbox.irchat.cn/index
 
 steps:
   - name: deploy
@@ -18,7 +18,7 @@ steps:
       - name: node_modules
         path: /drone/src/node_modules
       - name: deploy_path
-        path: /drone/src/dist
+        path: /drone/src/build
     commands:
       - npm config set registry https://registry.npmmirror.com/
       - npm install -g pnpm
