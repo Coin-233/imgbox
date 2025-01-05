@@ -12,7 +12,7 @@ volumes:
 
 steps:
   - name: deploy
-    image: node:16.13.2
+    image: node:22
     depends_on: [clone]
     volumes:
       - name: node_modules
