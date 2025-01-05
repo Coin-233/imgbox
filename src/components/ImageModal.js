@@ -72,7 +72,7 @@ const ImageModal = ({ selectedImage, closeModal }) => {
           </a>
         </div>
         <Giscus
-          repo="Coin-233/imgbox"
+          repo="Ten-Aki/imgbox"
           repoId="R_kgDONkM6tg"
           category="General"
           categoryId="DIC_kwDONkM6ts4Clt0D"
