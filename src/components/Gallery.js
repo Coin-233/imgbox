@@ -13,7 +13,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch('/img/images.json');
+        const response = await fetch('/images.json');
         const imagesList = await response.json();
         const shuffledImages = imagesList.sort(() => Math.random() - 0.5);
         setImages(shuffledImages);

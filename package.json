@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "bash public/get.sh && react-scripts build"
   },
   "browserslist": {
     "production": [
